@@ -57,7 +57,8 @@
             var _city = document.getElementById("City").value;
             const apiKey = '04c2da5ffc8ec18ecedd45d8daba00b7';
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${_city}&appid=${apiKey}`;
-
+           
+           
             try {
                 const response = await fetch(url);
                 const data = await response.json();
@@ -77,7 +78,7 @@
             var currentPressure= document.getElementById("pressure");
             var currentHumidity= document.getElementById("humidity");
           var currentWind=document.getElementById("wind");
-            currentTemp.innerHTML=tempKelvin + "°C";
+            currentTemp.innerHTML=tempKelvin + " °C";
             currentPressure.innerHTML=pressure + " %";
             currentHumidity.innerHTML= humidity + " %"
             currentWind.innerHTML=wind + " km/h";
